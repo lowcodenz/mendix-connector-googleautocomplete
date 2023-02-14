@@ -2,14 +2,14 @@
 Google Autocomplete lcnz is a Mendix widget that utilizes Google Autocomplete Api to provide autocomplete to the user as well as provide place and business information to the database.
 
 ## Features
-+ Autocomplete
-+ Place Data: street number, street name, suburb, city, country, and postal code
-+ Businesss Data: name, phone number, and website
++ Autocomplete.
++ Place Data: street number, street name, suburb, city, country, and postal code.
++ Businesss Data: name, phone number, website, google maps URL.
 
 ## Usage
-1. Input Api key (necessary)
-2. Input country name (only one at this stage, necessary)
-3. Input attributes (leave an attribute empty if not needed)
+1. Input Api key (necessary).
+2. Input country name (only one at this stage, necessary).
+3. Input attributes (leave an attribute empty if not needed).
 
 ## Issues, suggestions and feature requests
 + Currently autocomplete only handles searching in one country.
