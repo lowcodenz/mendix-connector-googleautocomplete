@@ -1,0 +1,39 @@
+{
+  "name": "googleautocomplete",
+  "widgetName": "GoogleAutocomplete",
+  "version": "1.0.0",
+  "description": "My widget description",
+  "copyright": "© Mendix Technology BV 2022. All rights reserved.",
+  "author": "Nicholas Hunt",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "C:\\\\Users\\\\nickl\\\\OneDrive\\\\Documents\\\\Mendix\\\\LcNz - MotherTrucking-main_2",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  },
+  "packagePath": "lowcode nz",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.18.0"
+  },
+  "dependencies": {
+    "axios": "^1.3.2",
+    "classnames": "^2.2.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "react-addressfinder": "^0.4.3",
+    "react-google-autocomplete": "^2.7.2",
+    "react-places-autocomplete": "^7.3.0"
+  }
+}

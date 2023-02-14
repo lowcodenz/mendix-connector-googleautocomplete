@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="lowcode nz.googleautocomplete.GoogleAutocomplete" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Google Autocomplete lcnz</name>
+    <description>Creates a text input for the user to type in an address, the google autocomplete provides locations that match, and once a location is selected then certain location data is uploaded into the designated database fields. Any suggestions let me know at nick.hunt@lowcode.co.nz. The repo is available at https://github.com/lowcodenz/mendix-connector-googleautocomplete.git</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+
+            <property key="apikey" type="string" required="false">
+                <caption>Api Key</caption>
+                <description>Insert Api key</description>
+            </property>
+
+            <property key="countryName" type="string" required="false">
+                <caption>Country Name</caption>
+                <description>Insert Country Name</description>
+            </property>
+
+        </propertyGroup>
+
+        <propertyGroup caption="Place Information">
+
+            <property key="streetNumber" type="attribute" required="false">
+                <caption>Street Number</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+            <property key="streetName" type="attribute" required="false">
+                <caption>Street Name</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+            <property key="suburb" type="attribute" required="false">
+                <caption>Suburb</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+            <property key="city" type="attribute" required="false">
+                <caption>City</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+            <property key="country" type="attribute" required="false">
+                <caption>Country</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+            <property key="postcode" type="attribute" required="false">
+                <caption>Postcode</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+            <property key="placeId" type="attribute" required="false">
+                <caption>PlaceId</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+            <property key="latitude" type="attribute" required="false">
+                <caption>Latitude</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+            <property key="longitude" type="attribute" required="false">
+                <caption>Longitude</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+        </propertyGroup>
+            <propertyGroup caption="Establishment Information">
+
+            <property key="establishmentName" type="attribute" required="false">
+                <caption>Establishment Name</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+            <property key="establishmentPhoneNumber" type="attribute" required="false">
+                <caption>Establishment Phone Number</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+            <property key="establishmentWebsite" type="attribute" required="false">
+                <caption>Establishment Website</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+            <property key="establishmentMapsUrl" type="attribute" required="false">
+                <caption>Establishment Maps URL</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
+        </propertyGroup>
+    </properties>
+</widget>
