@@ -7,5 +7,5 @@ export class preview extends Component {
 }
 
 export function getPreviewCss() {
-    return require("./ui/GoogleAutocomplete.css");
+    return require("./ui/GoogleAutocompletelcnz.css");
 }

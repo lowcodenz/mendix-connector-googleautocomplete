@@ -1,7 +1,7 @@
 import { Component, createElement } from "react";
 import Autocomplete from "react-google-autocomplete";
 
-export class GoogleAutocomplete extends Component {
+export class GoogleAutocompletelcnz extends Component {
   render() {
     return <Autocomplete
       apiKey={this.props.apikey}
