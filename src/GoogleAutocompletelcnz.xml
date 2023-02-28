@@ -1,8 +1,8 @@
-<?xml version="1.0.1" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <widget id="lowcode nz.googleautocompletelcnz.GoogleAutocompletelcnz" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
         supportedPlatform="Web"
         xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.mendix.com/widget/1.0.1/ ../node_modules/mendix/custom_widget.xsd">
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Google Autocomplete lcnz</name>
     <description>Creates a text input for the user to type in an address, the google autocomplete provides locations that match, and once a location is selected then certain location data is uploaded into the designated database fields. Any suggestions let me know at nick.hunt@lowcode.co.nz. The repo is available at https://github.com/lowcodenz/mendix-connector-googleautocomplete.git</description>
     <icon/>
