@@ -8,7 +8,8 @@ var addressCity = "";
 
 export class GoogleAutocompletelcnz extends Component {
   render() {
-    return <Autocomplete
+    return <div class="googleautocompletelcnz-wrap">
+      <Autocomplete
       apiKey={this.props.apikey}
       onPlaceSelected={(place) => {
         if (place != null) {
@@ -107,7 +108,8 @@ export class GoogleAutocompletelcnz extends Component {
         componentRestrictions: { country: this.props.countryName },
       }}
       defaultValue=""
-    />;
+    />
+    </div>;
   }
 }
 
