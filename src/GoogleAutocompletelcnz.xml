@@ -95,6 +95,14 @@
                 </attributeTypes>
             </property>
 
+            <property key="addressFull" type="attribute" required="false">
+                <caption>Full Address</caption>
+                <description>Insert attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+
         </propertyGroup>
             <propertyGroup caption="Establishment Information">
 

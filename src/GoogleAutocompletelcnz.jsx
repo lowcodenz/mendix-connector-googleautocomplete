@@ -1,6 +1,11 @@
 import { Component, createElement } from "react";
 import Autocomplete from "react-google-autocomplete";
 
+var addressPropertyNumber = "";
+var addressStreetName = "";
+var addressSuburb = "";
+var addressCity = "";
+
 export class GoogleAutocompletelcnz extends Component {
   render() {
     return <Autocomplete
@@ -10,18 +15,30 @@ export class GoogleAutocompletelcnz extends Component {
           // place data
           for (let i = 0; i < place.address_components.length; i++) {
             if (checkTypes(place.address_components[i].types, "street_number")) {
+              if (this.props.addressFull != null){
+                addressPropertyNumber = place.address_components[i].long_name;
+              }
               if (this.props.streetNumber != null) {
                 this.props.streetNumber.setValue(place.address_components[i].long_name);
               }
             } else if (checkTypes(place.address_components[i].types, "route")) {
+              if (this.props.addressFull != null){
+                addressStreetName = place.address_components[i].long_name;
+              }
               if (this.props.streetName != null) {
                 this.props.streetName.setValue(place.address_components[i].long_name);
               }
             } else if (checkTypes(place.address_components[i].types, "locality")) {
+              if (this.props.addressFull != null){
+                addressSuburb = place.address_components[i].long_name;
+              }
               if (this.props.suburb != null) {
-                this.props.suburb.setValue(place.address_components[i].long_name);
+                this.props.suburb.setValue(place.address_components[i].long_name); 
               }
             } else if (checkTypes(place.address_components[i].types, "administrative_area_level_1")) {
+              if (this.props.addressFull != null){
+                addressCity = place.address_components[i].long_name;
+              } 
               if (this.props.city != null) {
                 this.props.city.setValue(place.address_components[i].long_name);
               }
@@ -60,6 +77,27 @@ export class GoogleAutocompletelcnz extends Component {
           }
           if (this.props.establishmentMapsUrl != null) {
             this.props.establishmentMapsUrl.setValue(place.url);
+          }
+          // Full Address
+          if (this.props.addressFull != null){
+            var addressFullResult = "";
+            if (addressPropertyNumber != null && addressPropertyNumber != ""){
+              addressFullResult += addressPropertyNumber + " ";
+            }
+            if (addressStreetName != null && addressStreetName != " "){
+              addressFullResult += addressStreetName + " ";
+            }
+            if (addressSuburb != null && addressSuburb != " "){
+              addressFullResult += addressSuburb + " ";
+            }
+            if (addressCity != null && addressCity != " "){
+              addressFullResult += addressCity;
+            }
+            this.props.addressFull.setValue(addressFullResult);
+            addressPropertyNumber = "";
+            addressStreetName = "";
+            addressSuburb = "";
+            addressCity = "";
           }
         }
       }}

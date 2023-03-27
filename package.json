@@ -10,7 +10,7 @@
   },
   "license": "Apache-2.0",
   "config": {
-    "projectPath": "C:\\\\Users\\\\nickl\\\\OneDrive\\\\Documents\\\\Mendix\\\\LcNz - MotherTrucking-main_2",
+    "projectPath": "C:\\\\Users\\\\nickl\\\\Mendix\\\\WidgetTester-main",
     "mendixHost": "http://localhost:8080",
     "developmentPort": 3000
   },
